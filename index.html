@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Google Drive File Upload</h1>
+    <div class="g_id_signin"></div>
+
+    <input type="file" id="fileInput" style="display: none;" multiple>
+    <button id="uploadBtn" disabled>Upload</button>
+
+    <div id="fileList"></div>
+    <div id="uploadStatus"></div>
+
+    <!-- Include the Google API library -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</body>
+</html>
